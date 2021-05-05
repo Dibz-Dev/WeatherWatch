@@ -1,0 +1,9 @@
+body{
+    background-color: blueviolet;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
