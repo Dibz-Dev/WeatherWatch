@@ -4,24 +4,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
 
     <title>Weather</title>
 </head>
 
 
-<body>
+<body >
 
     <div class="card">
    <div class="header">
        <h1>Whats the weather like?</h1>
    </div>
    <div>
-       <input type="text">
+       <form class="form-control form-style" action="">
+       <input class="input-style input " type="text" placeholder="City search..."required>
+       </form>
    </div>
-   <div class="date"></div>
-   <div class="weather"></div>
-   <div class="temperature"></div>
-
+   <div class="data-wrapper">
+   <div class="date date-style"></div>
+   <div class="weather weather-style"></div>
+   <div class="temp temp-style"></div>
+  </div>
 
     </div>
     

@@ -1,19 +1,31 @@
 const key = 'LfQdp7cUG9XAPs8J2nSkfmViMYGeegjU';
 
 
-const getCity = async (city) => {
-const baseUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+const getWeather = async (id) => {
+    const baseUrl = 'http://dataservice.accuweather.com/currentconditions/v1/';
 
-const query = `?apikey=${key}&q=${city}`;
+    const query = `${id}?apikey=${key}`;
 
-const response = await fetch(baseUrl + query);
+    const response = await fetch(baseUrl + query);
 
-const data = await response.json();
+    const data = await response.json();
 
-return data[0];
-
+    return (data[0]);
+  
 };
 
-getCity('manosque')
-.then(data => console.log(data))
-.catch(err => console.log(err));
+
+
+
+const getCity =  async (city) => {
+    const baseUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+
+    const query = `?apikey=${key}&q=${city}`;
+
+    const response = await fetch(baseUrl + query);
+
+    const data = await response.json();
+
+     return (data[0]);
+};
+
