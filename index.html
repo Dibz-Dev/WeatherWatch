@@ -7,27 +7,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
     <title>Weather</title>
 </head>
 
 
-<body >
+<body style="background-color: gray;">
 
     <div class="card">
+       
+
+
    <div class="header">
-       <h1>Whats the weather like?</h1>
+       <h1>Weather Watch</h1>
    </div>
    <div>
        <form class="form-control form-style" action="">
-       <input class="input-style input " type="text" placeholder="City search..."required>
+       <input class="input-style input" name="city" autocomplete="off" type="text" placeholder="City search..."required>
        </form>
    </div>
-   <div class="data-wrapper">
-   <div class="date date-style"></div>
-   <div class="weather weather-style"></div>
-   <div class="temp temp-style"></div>
+   <div class="details">
+   <div class="date date-style">
+       <h3>City</h3>
+   </div>
+   <div class="weather weather-style ">
+       <img class="icon-style" src="sun.svg" alt="">
+       <h4>weather</h4>
+   </div>
+   <div class="temp temp-style">
+      <h4> <span>Temp</span>
+       <span>&deg;C</span></h4>
+   </div>
   </div>
 
     </div>
@@ -38,8 +49,8 @@
 
 
 
-
-    <script src="app.js"></script>
     <script src="data.js"></script>
+    <script src="app.js"></script>
+    
 </body>
 </html>
