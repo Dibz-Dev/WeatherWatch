@@ -41,6 +41,9 @@ const updateCity = async (city) => {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+    if(details.classList.contains('display')){
+        details.classList.remove('display')
+    }
 
 
   const city = form.city.value.trim();
@@ -49,6 +52,6 @@ form.addEventListener('submit', e => {
 
 
 updateCity(city)
-.then(data => console.log(data))
+.then(data => updateUI(data))
 .catch(err => console.log(err));
 });
