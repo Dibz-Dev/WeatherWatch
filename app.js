@@ -14,6 +14,10 @@ const updateUI = (data) => {
         background.style='background-color:#87ceeb';
       }
 
+      const temperature = weather.Temperature.Metric.Value;
+
+      const temp = Math.floor(temperature)
+
 
         details.innerHTML = `
                 <div class="details">
@@ -25,7 +29,7 @@ const updateUI = (data) => {
                     <h4>${weather.WeatherText}</h4>
                 </div>
                 <div class="temp temp-style">
-                    <h4><span>${weather.Temperature.Metric.Value}</span>
+                    <h4><span>${temp}</span>
                     <span>&deg;C</span></h4>
                 </div>
                 </div>`
