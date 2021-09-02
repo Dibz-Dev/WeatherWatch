@@ -1,0 +1,223 @@
+
+
+
+
+
+/* ----------------------------HEADER----------------------------------------- */
+
+
+:root {
+    font-family: 'karla', sans-serif;
+    box-sizing: border-box;
+}
+
+    /* ------------------------FORM/INPUT---------------------------------------- */
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+input.search-item{
+    
+    font-size: 1.4em;
+    border-radius: 3px;
+    border-bottom:1px solid black;
+    border-top:none;
+    border-right: none;
+    height:40px;
+    color: black;
+    font-family: 'karla', sans-serif;
+    outline: none;
+    
+    }
+input:focus{
+    outline: none;
+ 
+    
+}
+::placeholder{
+    color:rgb(214, 210, 210);
+
+}
+
+li{
+    cursor: pointer;
+}
+.uncheck{
+    position: relative;
+    width:60px;
+    background-color: rgb(204, 202, 202);
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    height:40px;
+    border-radius: 5px;
+    font-family: 'karla', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: tan;
+
+   
+    
+   
+}
+
+.check{
+    position: relative;
+    width:60px;
+    background-color: rgb(204, 202, 202);
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    height:30px;
+    border-radius: 5px;
+    font-family: 'karla', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: springgreen;
+    text-decoration: line-through;
+   
+}
+
+
+.s-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 120px));
+    grid-gap: 10px;
+    
+
+}
+/* ----------------------------------------------------------------------------- */
+/* ---------------------------------SHOPPING LIST-------------------------------- */
+.shopping-wrapper{
+    height:100%;
+    width:70%;
+    margin: 30px auto;
+    
+    
+    
+}
+
+.fa-times{
+    position: absolute;
+    top:0%;
+    right:0%;
+    color:white;
+   
+    
+
+}
+
+/* --------------------------------LOGIN------------------------------- */
+
+form#login {
+     
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin: auto;
+     max-width: 100%;
+}
+
+.username-box, .password-box {
+    padding:5px;
+
+}
+
+.username-box input, .password-box input {
+    width:170px;
+}
+
+form #signup {
+    width:100%;
+    
+
+
+}
+
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+.choices {
+   margin-top: 100px;
+    
+   
+    
+}
+
+.signlog-choice {
+    outline: 1px solid black;
+    display: flex;
+    left:-10%;
+    right:0%;
+    width:100%;
+    justify-content: center;
+    
+    
+}
+
+.list-choice {
+    list-style: none;
+    
+  
+}
+
+
+/* ---------------------------------Create----------------------------- */
+
+.add-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 100%;
+   
+    
+}
+
+.group, .category, .item-name {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+
+   
+}
+
+.item-name input, .category input {
+    width:200px;
+   
+}
+
+.group input {
+    width:50px;
+}
+
+.add-btn, .login-btn, .oops-btn, .signup-btn {
+    margin-top: 5px;
+    margin-left: auto;
+    padding:5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightblue;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+

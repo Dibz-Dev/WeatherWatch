@@ -1,0 +1,46 @@
+const form = document.querySelector('form');
+const ul = document.querySelector('ul');
+
+
+
+
+
+    
+
+
+const generateTemplate = value => {
+
+
+  
+
+      ul.innerHTML +=  `<li class="uncheck">${value}<i style="display:none"class="fas fa-times"></i></li>
+      `;
+
+}
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+       const value = form.search.value.trim();
+
+       generateTemplate(value);
+       form.reset();
+});
+
+
+
+
+
+ul.addEventListener('click', e => {
+
+
+  if(e.target.classList.contains('uncheck')) {
+    e.target.setAttribute('class', 'check')
+  } else if (e.target.classList.contains('check')) {
+    e.target.setAttribute('class', 'uncheck')
+  }
+})
+
+
+
+
